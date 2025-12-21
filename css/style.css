@@ -1,0 +1,126 @@
+.simply-scroll, .simply-scroll-clip {
+    width: 100% !important;
+}
+
+
+
+/* common */
+/* navigation bar */
+.navi-Wrap {
+    height: 80px;
+}
+
+
+/* main banner */
+.mn-bnr {
+    width: 100%;
+    background-color: #202020;
+}
+
+.mn-bnr .swiper-wrapper {
+    position: relative;
+}
+
+.mn-bnr .swiper-slide {
+    text-align: center;
+    overflow: hidden;
+    height: 920px;
+}
+
+.mn-bnr .swiper-slide:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #1C1B1B;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.mn-bnr .swiper-slide img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mn-bnr .swiper-slide .mn-txts {
+    max-width: 1240px;
+    position: absolute;
+    width: fit-content;
+    z-index: 5;
+    top: 30%;
+    left: 20%;
+    text-align: left;
+}
+
+.mn-bnr .swiper-slide .mn-txts h4 {
+    color: #009CDE;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mn-bnr .swiper-slide .mn-txts h2 {
+    font-size: 56px;
+    margin-top: 46px;
+    color: #fff;
+    letter-spacing: -2.8px;
+    font-weight: 600;
+    position: relative;
+}
+
+.mn-bnr .swiper-slide .mn-txts h2:before {
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 142px;
+    height: 1px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+
+
+
+
+.certi-wrap {
+    margin: 60px 0 120px;
+}
+
+.certi-wrap ul  {
+}
+
+.certi-wrap ul li {
+    padding-bottom: 35px;
+}
+
+.certi-wrap ul li img {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    height: 100%;
+}
+
+
+.scroller li {
+}
+
+/* simplyScroll 기본 CSS (필요시 조정) */
+/* .simply-scroll .simply-scroll-clip {
+    height: 300px !important;
+} */
+
+
+.swiper [data-aos]{
+  opacity: 0;
+}
+
+/* 활성 슬라이드에서만 aos-animate 붙으면 보이기 */
+.swiper .swiper-slide-active [data-aos].aos-animate{
+  opacity: 1;
+}

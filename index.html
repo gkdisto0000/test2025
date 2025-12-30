@@ -280,15 +280,15 @@
 
   <!-- 건물종합관리 -->
   <section class="common-wrap">
-    <div class="section-03">
+    <div class="section-04">
         <div class="left-txts">
             <h4 class="colored">
                 PERFORMANCE STATUS
             </h4>
-            <h2>
+            <h2 class="letter-spaceingBig">
                 소규모 빌라부터 단지형 아파트까지!
             </h2>
-            <p>
+            <p class="letter-spacingMid">
                 240여개 건물관리와 10년 이상의 관리노하우 빅데이터의<br> 
                 기반으로 관리사무소대행, 관리단구성, 관리규약, <br>
                 관리비고지서 대행 등 다양한 관리실적을 가지고 있습니다.<br>
@@ -306,7 +306,7 @@
                             “메리트건물종합관리” 설립</p>
                     </div>
                     <h3>빌라관리</h3>
-                    <img src="" alt="">
+                    <img src="./image/building01.png" alt="">
                 </li>
                 <li>
                     <div class="years">
@@ -317,7 +317,7 @@
                     </div>
                     <h3>상가, 프라자<br>
                         건물관리</h3>
-                    <img src="" alt="">
+                    <img src="./image/building02.png" alt="">
                 </li>
                 <li>
                     <div class="years">
@@ -329,7 +329,7 @@
                     <h3>나홀로아파트<br>
                         도심형생활주택<br>
                         오피스텔</h3>
-                    <img src="" alt="">
+                    <img src="./image/building03.png" alt="">
                 </li>
                 <li>
                     <div class="years">
@@ -343,7 +343,7 @@
                     <h3>단지형빌라<br>
                         아파트<br>
                         대형상가건물</h3>
-                    <img src="" alt="">
+                    <img src="./image/building04.png" alt="">
                 </li>
             </ul>
             <div class="arrow"></div>
@@ -355,14 +355,14 @@
 
 
   <!-- 오시는길 -->
-   <section class="common-wrap">
-        <div class="section-04">
+   <section>
+        <div class="section-05">
             <div class="txts">
                 <h2>오시는 길</h2>
+                <p>경기도 부천시 소사구 심곡로 67번길 5(심곡본동)</p>
             </div>
-            <p>경기도 부천시 소사구 심곡로 67번길 5(심곡본동)</p>
         </div>
-        <div class="map" style="height: 1000px; outline: 2px solid red;">
+        <div class="map" style="height: 604px;">
             <div id="map" style="width:100%;height:100%;"></div>
         </div>
    </section>
@@ -419,13 +419,24 @@
     </div>
 
 
+    <!-- floating banner -->
+    <div class="floating-wrap">
+        <ul>
+            <li><a href=""><span>전화상담</span></a></li>
+            <li><a href=""><span>카톡상담</span></a></li>
+            <li><a href=""><span>네이버블로그</span></a></li>
+            <li><a href=""><span>오시는길</span></a></li>
+        </ul>
+    </div>
+
+
     <script>
     var myLocation = new naver.maps.LatLng(37.4815416, 126.7845663);
     
     // 2. 지도 옵션 설정
     var mapOptions = {
         center: myLocation, // 주소 위치를 중심으로 설정
-        zoom: 17
+        zoom: 18
     };
     
     // 3. 지도 생성

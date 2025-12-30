@@ -490,6 +490,126 @@ h2 {
 }
 
 
+
+/* 건물종합관리 */
+.section-04 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 225px;
+}
+
+.section-04 .left-txts h4 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-04 .left-txts h2 {
+    margin-top: 20px;
+    font-size: 46px;
+    white-space: nowrap;
+}
+
+.section-04 .left-txts p {
+    margin-top: 33px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.section-04 .graph-wrap {
+    position: relative;
+}
+
+.section-04 .graph-wrap ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+.section-04 .graph-wrap ul li {
+    height: 100%;
+    position: relative;
+}
+
+
+.section-04 .graph-wrap ul li:nth-child(n + 2 ) {
+    margin-left: 8px;
+}
+
+.section-04 .graph-wrap ul li img {
+    width: 145px;
+    margin: 0 0 0 auto;
+}
+
+.section-04 .graph-wrap ul li .years {
+    text-align: right;
+    position: absolute;
+    right: 80px;
+    top: -10px;
+    white-space: nowrap;
+}
+
+.section-04 .graph-wrap ul li .years h4 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.section-04 .graph-wrap ul li .years p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    margin-top: 2px;
+}
+
+.section-04 .graph-wrap ul li h3 {
+    color: #fff;
+    font-weight: 900;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 18px;
+}
+
+.section-04 .graph-wrap .arrow {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../image/building-arrow.png');
+    width: 453px;
+    height: 267px;
+    position: absolute;
+    top: -47px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+
+
+/* 오시는길 */
+.section-05 {
+    margin-top: 220px;
+}
+
+.section-05 .txts {
+    text-align: center;
+}
+
+.section-05 .txts p {
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.map {
+    margin-top: 75px;
+    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+
 /* footer */
 .ftr-wrap footer {
     margin-top: 170px;
@@ -578,4 +698,100 @@ h2 {
     background-color: #ddd;
     position: absolute;
     top: 0;
+}
+
+
+/* floating banner */
+.floating-wrap {
+    position: fixed;
+    right: 0;
+    top: 500px;
+    z-index: 9999;
+}
+
+.floating-wrap ul li {
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+}
+
+.floating-wrap ul li a {
+    text-align: center;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.floating-wrap ul li a span {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.floating-wrap ul li::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.floating-wrap ul li:nth-child(1) {
+    background-color: #009CDE;
+}
+
+.floating-wrap ul li:nth-child(1):after {
+    width: 28px;
+    height: 28px;
+    bottom: 15px;
+    background-image: url('../image/floating-01.png');
+}
+
+.floating-wrap ul li:nth-child(2) {
+    background-color: #F2D410;
+}
+
+.floating-wrap ul li:nth-child(2) a span {
+    color: #3C1F21;
+}
+
+.floating-wrap ul li:nth-child(2):after {
+    width: 52px;
+    height: 52px;
+    bottom: 18px;
+    background-image: url('../image/floating-02.png');
+}
+
+.floating-wrap ul li:nth-child(3) {
+    background-color: #30A846;
+}
+
+.floating-wrap ul li:nth-child(3):after {
+    width: 35px;
+    height: 32px;
+    bottom: 18px;
+    background-image: url('../image/floating-03.png');
+}
+
+.floating-wrap ul li:nth-child(4) {
+    background-color: #202020;
+}
+
+.floating-wrap ul li:nth-child(4):after {
+    width: 32px;
+    height: 32px;
+    bottom: 20px;
+    background-image: url('../image/floating-04.png');
 }

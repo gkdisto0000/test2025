@@ -1,5 +1,6 @@
 
 
+
 /* common */
 .pc-show {
     display: block;
@@ -11,7 +12,7 @@
     margin: 0 auto;
 }
 
-body {
+html, body {
     color: #1C1B1B;
     width: 100%;
     overflow-x: hidden;

@@ -827,7 +827,7 @@ h2 {
     /* common */
     .common-wrap {
         width: 100%;
-        margin: 0 30px;
+        /* margin: 0 30px; */
     }
 
     .pc-show {
@@ -887,7 +887,7 @@ h2 {
     }
 
 /* 추후 수정 */
-.bnr-wrap .banner::before, .section-01 .image-left:before, .section-04 .graph-wrap .arrow, .section-01 .image-left .img-wrap:nth-child(2)::before {
+.bnr-wrap .banner::before, .section-01 .image-left:before, .section-04 .graph-wrap .arrow, .section-01 .image-left .img-wrap:nth-child(2)::before, .section-02 .img-wrap {
     display: none;
 }
 

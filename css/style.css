@@ -820,10 +820,9 @@ h2 {
 /* 태블릿 */
 @media (max-width: 1023px) {
 
-    body {
-        outline: 2px solid red;
+    .navi-sec, .section-01, section-02, .bnr-wrap, section-03, section-04, section-05, .ftr-wrap {
+        padding: 0 20px;
     }
-
     /* common */
     .common-wrap {
         width: 100%;

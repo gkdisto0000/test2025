@@ -1,6 +1,5 @@
 
 
-
 /* common */
 .pc-show {
     display: block;
@@ -848,6 +847,10 @@ h2 {
         display: flex;
     }
 
+    .floating-wrap ul li {
+        width: 25%;
+    }
+
 
     /* navigation */
     .navi-sec h1 {
@@ -886,7 +889,7 @@ h2 {
     }
 
 /* 추후 수정 */
-.bnr-wrap .banner::before, .section-01 .image-left:before, .section-04 .graph-wrap .arrow, .section-01 .image-left .img-wrap:nth-child(2)::before, .section-02 .img-wrap {
+.bnr-wrap .banner::before, .section-01 .image-left:before, .section-04 .graph-wrap .arrow, .section-01 .image-left .img-wrap:nth-child(2)::before, .section-02 .img-wrap, .section-04 .graph-wrap {
     display: none;
 }
 
@@ -929,5 +932,4 @@ h2 {
 @media (max-width: 820px) {
   
 }
-
 

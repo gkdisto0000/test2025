@@ -829,6 +829,10 @@ h2 {
         /* margin: 0 30px; */
     }
 
+    .mn-bnr-Wrap + .common-wrap {
+        margin-top: 60px;
+    }
+
     .pc-show {
         display: none !important;
     }
@@ -836,6 +840,23 @@ h2 {
     .flex {
         display: block;
     }
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .section-02 dt, .section-02 dd, .section-04 .left-txts h2, .section-04 .graph-wrap ul li .years {
+        white-space: initial;
+    }
+
+    /* 추후 수정 */
+    .bnr-wrap .banner::before, .section-01 .image-left:before, .section-04 .graph-wrap .arrow, .section-02 .img-wrap, .section-04 .graph-wrap {
+        display: none;
+    }
+
+
+
 
     /* floating */
     .floating-wrap {
@@ -876,30 +897,78 @@ h2 {
     
     .mn-bnr .swiper-slide .mn-txts h2 {
         font-size: 34px;
+        word-break: keep-all;
+    }
+
+    .mn-bnr .swiper-slide .mn-txts h2:before {
+        right: 0;
+        bottom: 0;
+        top: -185px;
+        margin: auto;
+    }
+
+    .mn-bnr .swiper-slide .mn-txts {
+        text-align: center;
     }
 
     
     /* section 01 */
     .section-01 .image-left .img-wrap:nth-child(1) {
-        width: 44%;
+        width: 100%;
     }
 
     .section-01 .image-left .img-wrap:nth-child(2) {
-        width: 30%;
+        width: 55%;
         right: 0;
     }
 
-/* 추후 수정 */
-.bnr-wrap .banner::before, .section-01 .image-left:before, .section-04 .graph-wrap .arrow, .section-01 .image-left .img-wrap:nth-child(2)::before, .section-02 .img-wrap, .section-04 .graph-wrap {
-    display: none;
-}
+    .section-01 .image-left .img-wrap:nth-child(2)::before {
+        width: 112%;
+        left: -11px;
+        height: 106%;
+        border-radius: 9%;
+    }
 
-.section-02 dt, .section-02 dd, .section-04 .left-txts h2, .section-04 .graph-wrap ul li .years {
-    white-space: initial;
-}
+    .section-01 .txt-right {
+        margin-left: 0;
+        margin-top: 220px;
+    }
+
+    .section-01 .txt-right p::before {
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        top: -175px;
+    }
+
+    .section-01 .txt-right p {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+
+
+    /* 인증서 */
+    .certi-wrap {
+        padding: 60px 0;
+    }
+
+    .certi-wrap ul li img {
+        width: 125px;
+    }
+
+    .simply-scroll .simply-scroll-list li {
+        width: 145px !important;
+        height: 180px !important;
+    }
+
+
+
+
+
 
     /* section 04 */
-
     .section-04 {
         display: block;
     }
@@ -910,10 +979,53 @@ h2 {
 
 
 
+    /* 연락 배너 */
+    .bnr-wrap .banner {
+        padding: 40px 20px;
+        display: block;
+    }
+
+    .bnr-wrap .banner h2 {
+        font-size: 30px;
+    }
+
+    .bnr-wrap .banner p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .bnr-wrap .banner .btn-wrap {
+        width: fit-content;
+        height: inherit;
+        margin: 20px auto 0;
+        padding: 12px 30px;
+    }
+
+    .bnr-wrap .banner .btn-wrap span {
+        font-size: 22px;
+    }
+
+
+
+    /* 건물관리 2 */
+    .section-03 h2 {
+        font-size: 32px;
+        margin-top: 80px;
+    }
+
+    .section-03 .arti-wrap {
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .section-03 .arti-wrap article {
+        width: 100%;
+        background-size: contain;
+        height: auto;
+    }
 
 
     /* footer */
-
     .ftr-wrap footer .footer-content {
         display: block;
     }

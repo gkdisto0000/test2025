@@ -18,9 +18,12 @@
 }
 
 html {
+    overflow-x: hidden;
+}
+
+html, body {
     color: #1C1B1B;
     width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -982,6 +985,11 @@ h2 {
 
     
     /* section 01 */
+    .section-01 {
+        width: 100%;
+        overflow: hidden;
+    }
+
     .section-01 .image-left .img-wrap:nth-child(1) {
         width: 100%;
     }

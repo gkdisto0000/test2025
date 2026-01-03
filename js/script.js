@@ -55,6 +55,25 @@ $(function () {
     }, 400);
   });
 
+  // floating banner
+  $(window).on('scroll resize', function () {
+    const winW = $(window).width();
+
+    if (winW > 1023) return; // PC에서는 실행 안 함
+
+    const scrollTop = $(window).scrollTop();
+    const winH = $(window).height();
+    const docH = $(document).height();
+
+    const isBottom = scrollTop + winH >= docH - 5; // 오차 보정
+
+    if (isBottom) {
+      $('.floating-wrap').stop(true, true).fadeOut(300);
+    } else {
+      $('.floating-wrap').stop(true, true).fadeIn(300);
+    }
+  });
+
 
 
 });

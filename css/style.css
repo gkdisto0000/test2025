@@ -572,6 +572,7 @@ h2 {
 .section-04 .graph-wrap ul li .years h4 {
     font-size: 17px;
     font-weight: bold;
+    font-family: 'Giants';
 }
 
 .section-04 .graph-wrap ul li .years p {
@@ -665,6 +666,7 @@ h2 {
     font-size: 16px;
     color: #009CDE;
     font-weight: bold;
+    font-family: 'Giants';
 }
 
 .ftr-wrap footer .footer-content .ftr-right dl:nth-child(n + 2) {

@@ -17,9 +17,6 @@
     margin: 0 auto;
 }
 
-html {
-    overflow-x: hidden;
-}
 
 html, body {
     color: #1C1B1B;
@@ -896,6 +893,11 @@ h2 {
 
 
     /* navigation */
+
+    .navi-sec {
+        width: 100%;
+    }
+
     .navi-sec h1 {
         width: 200px;
     }

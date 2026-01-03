@@ -913,14 +913,6 @@ h2 {
         display: none;
     }
 
-    .navi-sec .flex {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 3;
-    }
-
     .navi-sec .flex nav {
         display: block;
         position: absolute;

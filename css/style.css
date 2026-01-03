@@ -880,6 +880,58 @@ h2 {
         width: 200px;
     }
 
+    .hamberger {
+        background-color: #009CDE;
+        width: 40px;
+        height: 40px;
+        border-radius: 7px;
+    }
+    
+    .hamberger .open, .hamberger .close {
+        width: 25px;
+        height: 25px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 7px 0;
+    }
+
+    .hamberger .close {
+        display: none;
+    }
+
+    .navi-sec .flex {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .navi-sec .flex nav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        display: none;
+    }
+
+    .navi-sec .flex nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .navi-sec .flex nav a:nth-child(n+1) {
+        margin-left: 0;
+        border-bottom: 1px solid #ddd;
+    }
 
     /* main-banner */
     .mn-bnr .swiper-slide {
@@ -1028,7 +1080,7 @@ h2 {
     }
 
     .section-03 .arti-wrap {
-        margin-top: 10px;
+        margin-top: 20px;
         padding: 0 20px;
     }
 

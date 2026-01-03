@@ -19,10 +19,15 @@ $(function () {
   });
 
 
-    $('.scroller').simplyScroll({
-        speed: 2,
-    });
+  $('.scroller').simplyScroll({
+      speed: 2,
+  });
 
+
+  // 모바일 햄버거 네비게이션 바
+  $('.hamberger .open').on('click', function () {
+    $('.navi-sec .flex nav').stop(true, true).slideDown(250);
+  });
 
 
 

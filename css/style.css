@@ -6,6 +6,11 @@
     display: block;
 }
 
+.mo-show {
+    display: none;
+}
+
+
 .common-wrap {
     max-width: 1240px;
     width: 80%;
@@ -16,6 +21,10 @@ html, body {
     color: #1C1B1B;
     width: 100%;
     overflow-x: hidden;
+}
+
+body {
+    position: relative;
 }
 
 .flex {
@@ -60,6 +69,10 @@ h2 {
 /* navigation bar */
 .navi-Wrap {
     height: 80px;
+    position: fixed;
+    z-index: 999999999;
+    background-color: #fff;
+    width: 100%;
 }
 
 .navi-sec {
@@ -124,6 +137,7 @@ h2 {
 
 /* main banner */
 .mn-bnr {
+    margin-top: 80px;
     width: 100%;
     background-color: #202020;
 }
@@ -911,6 +925,7 @@ h2 {
         display: block;
         position: absolute;
         width: 100%;
+        height: auto;
         top: 80px;
         left: 0;
         display: none;
@@ -932,6 +947,12 @@ h2 {
         margin-left: 0;
         border-bottom: 1px solid #ddd;
     }
+
+    .mo-show {
+        display: block;
+    }
+
+
 
     /* main-banner */
     .mn-bnr .swiper-slide {
@@ -1163,7 +1184,7 @@ h2 {
 
     .section-04 .graph-wrap .arrow {
         width: 80%;
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     /* 연락 배너 */

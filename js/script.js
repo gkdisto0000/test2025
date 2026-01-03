@@ -27,6 +27,32 @@ $(function () {
   // 모바일 햄버거 네비게이션 바
   $('.hamberger .open').on('click', function () {
     $('.navi-sec .flex nav').stop(true, true).slideDown(250);
+    $(this).hide();
+    $('.hamberger .close').show();
+  });
+
+  $('.hamberger .close').on('click', function () {
+    $('.navi-sec .flex nav').stop(true, true).slideUp(250);
+    $(this).hide();
+    $('.hamberger .open').show();
+  });
+
+
+  // 헤더 클릭 시 특정위치로 앵커
+  $('nav a').on('click', function (e) {
+    e.preventDefault();
+
+    const targetClass = $(this).data('target');
+    const $target = $('.' + targetClass);
+    const headerH = $('.navi-sec').outerHeight();
+
+    if (!$target.length) return;
+
+    const targetTop = $target.offset().top - headerH;
+
+    $('html, body').stop().animate({
+      scrollTop: targetTop
+    }, 400);
   });
 
 

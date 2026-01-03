@@ -838,10 +838,6 @@ h2 {
 /* 태블릿 */
 @media (max-width: 1023px) {
 
-    body {
-        overflow-x: hidden;
-    }
-
     .navi-sec, .section-01, section-02, .bnr-wrap, section-03, section-04, section-05, .ftr-wrap {
         padding: 0 20px;
     }

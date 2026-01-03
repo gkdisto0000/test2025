@@ -924,8 +924,7 @@ h2 {
         display: none;
     }
 
-    .navi-sec .flex nav {
-        display: block;
+    .navi-sec .flex {
         position: absolute;
         width: 100%;
         height: auto;

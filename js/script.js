@@ -26,13 +26,13 @@ $(function () {
 
   // 모바일 햄버거 네비게이션 바
   $('.hamberger .open').on('click', function () {
-    $('.navi-sec .flex nav').stop(true, true).slideDown(250);
+    $('.navi-sec .flex').stop(true, true).slideDown(250);
     $(this).hide();
     $('.hamberger .close').show();
   });
 
   $('.hamberger .close').on('click', function () {
-    $('.navi-sec .flex nav').stop(true, true).slideUp(250);
+    $('.navi-sec .flex').stop(true, true).slideUp(250);
     $(this).hide();
     $('.hamberger .open').show();
   });

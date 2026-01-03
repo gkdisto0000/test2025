@@ -17,7 +17,7 @@
     margin: 0 auto;
 }
 
-html, body {
+html {
     color: #1C1B1B;
     width: 100%;
     overflow-x: hidden;
@@ -70,9 +70,10 @@ h2 {
 .navi-Wrap {
     height: 80px;
     position: fixed;
-    z-index: 999999999;
+    z-index: 999;
     background-color: #fff;
     width: 100%;
+    top: 0;
 }
 
 .navi-sec {
@@ -836,6 +837,10 @@ h2 {
 
 /* 태블릿 */
 @media (max-width: 1023px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .navi-sec, .section-01, section-02, .bnr-wrap, section-03, section-04, section-05, .ftr-wrap {
         padding: 0 20px;

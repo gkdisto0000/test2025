@@ -17,6 +17,9 @@
     margin: 0 auto;
 }
 
+html {
+    overflow-x: hidden;
+}
 
 html, body {
     color: #1C1B1B;
@@ -74,6 +77,7 @@ h2 {
     background-color: #fff;
     width: 100%;
     top: 0;
+    left: 0;
 }
 
 .navi-sec {
@@ -844,7 +848,6 @@ h2 {
     /* common */
     .common-wrap {
         width: 100%;
-        /* margin: 0 30px; */
     }
 
     .mn-bnr-Wrap + .common-wrap {

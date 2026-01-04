@@ -897,13 +897,16 @@ h2 {
 
     /* navigation */
 
-    .navi-sec {
-        width: 100%;
+    .navi-Wrap {
         padding-top: env(safe-area-inset-top);
-          position: fixed;
-            top: env(safe-area-inset-top);
-            left: 0;
-            right: 0;
+        height: calc(80px + env(safe-area-inset-top));
+    }
+
+    .navi-sec {
+        position: relative; /* fixed 제거 */
+        height: 80px;
+        padding-top: 0;
+        top: auto;
     }
 
     .navi-sec h1 {

@@ -919,6 +919,10 @@ h2 {
         width: 40px;
         height: 40px;
         border-radius: 7px;
+          position: relative;
+        z-index: 10000;
+        -webkit-tap-highlight-color: transparent; /* iOS 탭 하이라이트 제거 */
+        touch-action: manipulation;
     }
     
     .hamberger .open, .hamberger .close {
@@ -927,11 +931,23 @@ h2 {
         margin: 0 auto;
         height: 100%;
         padding: 7px 0;
+          display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hamberger .close {
         display: none;
     }
+
+    .hamberger img {
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+    }
+
+    .hamberger.is-open .open { display: none; }
+    .hamberger.is-open .close { display: flex; }
 
     .navi-sec .flex nav {
         position: absolute;

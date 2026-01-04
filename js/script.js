@@ -29,21 +29,40 @@ $(function () {
   });
 
 
-  // 모바일 햄버거 네비게이션 바
-  $('.hamberger .open').on('touchstart click', function (e) {
-    e.preventDefault();
-    $('.navi-sec .flex nav').stop(true, true).slideDown(250);
-    $(this).hide();
-    $('.hamberger .close').show();
-  });
+// 모바일 햄버거 네비게이션 바 (iOS 안정형)
+const $ham = $('.hamberger');
+const $nav = $('.navi-sec .flex nav');
 
-  $('.hamberger .close').on('touchstart click', function (e) {
-    e.preventDefault();
-    $('.navi-sec .flex nav').stop(true, true).slideUp(250);
-    $(this).hide();
-    $('.hamberger .open').show();
-  });
+$ham.on('click', function (e) {
+  e.preventDefault();
 
+  $ham.toggleClass('is-open');
+  if ($ham.hasClass('is-open')) {
+    $nav.stop(true, true).slideDown(250);
+  } else {
+    $nav.stop(true, true).slideUp(250);
+  }
+});
+
+// 메뉴 항목 클릭하면 자동 닫기(모바일)
+$('nav a').on('click', function (e) {
+  e.preventDefault();
+
+  const targetClass = $(this).data('target');
+  const $target = $('.' + targetClass);
+  const headerH = $('.navi-sec').outerHeight();
+  if (!$target.length) return;
+
+  const targetTop = $target.offset().top - headerH;
+
+  $('html, body').stop().animate({ scrollTop: targetTop }, 400);
+
+  // ✅ 모바일이면 메뉴 닫기
+  if (window.innerWidth <= 1023) {
+    $ham.removeClass('is-open');
+    $nav.stop(true, true).slideUp(0);
+  }
+});
 
 
   // 헤더 클릭 시 특정위치로 앵커

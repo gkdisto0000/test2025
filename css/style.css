@@ -899,6 +899,11 @@ h2 {
 
     .navi-sec {
         width: 100%;
+        padding-top: env(safe-area-inset-top);
+          position: fixed;
+            top: env(safe-area-inset-top);
+            left: 0;
+            right: 0;
     }
 
     .navi-sec h1 {
@@ -924,7 +929,7 @@ h2 {
         display: none;
     }
 
-    .navi-sec .flex {
+    .navi-sec .flex nav {
         position: absolute;
         width: 100%;
         height: auto;

@@ -17,13 +17,10 @@
     margin: 0 auto;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 html, body {
     color: #1C1B1B;
     width: 100%;
+    overflow-x: hidden;
 }
 
 body {

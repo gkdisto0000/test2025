@@ -15,6 +15,11 @@ $(function () {
         delay: 3000,
         disableOnInteraction: false,
       },
+
+      // 🔥 이거 두 개가 핵심
+      touchStartPreventDefault: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
     });
   });
 
@@ -25,17 +30,20 @@ $(function () {
 
 
   // 모바일 햄버거 네비게이션 바
-  $('.hamberger .open').on('click', function () {
+  $('.hamberger .open').on('touchstart click', function (e) {
+    e.preventDefault();
     $('.navi-sec .flex nav').stop(true, true).slideDown(250);
     $(this).hide();
     $('.hamberger .close').show();
   });
 
-  $('.hamberger .close').on('click', function () {
+  $('.hamberger .close').on('touchstart click', function (e) {
+    e.preventDefault();
     $('.navi-sec .flex nav').stop(true, true).slideUp(250);
     $(this).hide();
     $('.hamberger .open').show();
   });
+
 
 
   // 헤더 클릭 시 특정위치로 앵커

@@ -200,6 +200,18 @@ h2 {
     color: #009CDE;
     font-size: 20px;
     font-weight: bold;
+    position: relative;
+}
+
+.mn-bnr .swiper-slide .mn-txts h4:before {
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 142px;
+    height: 1px;
+    position: absolute;
+    top: 58px;
+    left: 0;
 }
 
 .mn-bnr .swiper-slide .mn-txts h2 {
@@ -208,19 +220,8 @@ h2 {
     color: #fff;
     letter-spacing: -2.8px;
     font-weight: 600;
-    position: relative;
 }
 
-.mn-bnr .swiper-slide .mn-txts h2:before {
-    display: block;
-    content: '';
-    background-color: #fff;
-    width: 142px;
-    height: 1px;
-    position: absolute;
-    top: -20px;
-    left: 0;
-}
 
 
 
@@ -1011,17 +1012,22 @@ h2 {
 
     .mn-bnr .swiper-slide .mn-txts {
         left: 0;
+        right: 0;
+        top: 30%;
+        bottom: 0;
+        margin: auto;
     }
     
     .mn-bnr .swiper-slide .mn-txts h2 {
         font-size: 34px;
         word-break: keep-all;
+        width: 100%;
     }
 
-    .mn-bnr .swiper-slide .mn-txts h2:before {
+    .mn-bnr .swiper-slide .mn-txts h4:before {
         right: 0;
         bottom: 0;
-        top: -185px;
+        top: 45px;
         margin: auto;
     }
 

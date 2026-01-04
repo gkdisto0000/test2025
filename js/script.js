@@ -15,11 +15,6 @@ $(function () {
         delay: 3000,
         disableOnInteraction: false,
       },
-
-      // 🔥 이거 두 개가 핵심
-      touchStartPreventDefault: false,
-      preventClicks: false,
-      preventClicksPropagation: false,
     });
   });
 
@@ -57,7 +52,7 @@ $('nav a').on('click', function (e) {
 
   $('html, body').stop().animate({ scrollTop: targetTop }, 400);
 
-  // ✅ 모바일이면 메뉴 닫기
+  // 모바일이면 메뉴 닫기
   if (window.innerWidth <= 1023) {
     $ham.removeClass('is-open');
     $nav.stop(true, true).slideUp(0);
@@ -92,7 +87,8 @@ $('nav a').on('click', function (e) {
     const winH = $(window).height();
     const docH = $(document).height();
 
-    const isBottom = scrollTop + winH >= docH - 5; // 오차 보정
+    // 하단에서 100px 전에 사라지도록
+    const isBottom = scrollTop + winH >= docH - 100;
 
     if (isBottom) {
       $('.floating-wrap').stop(true, true).fadeOut(300);

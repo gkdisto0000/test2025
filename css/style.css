@@ -193,9 +193,13 @@ h2 {
     position: absolute;
     width: fit-content;
     z-index: 5;
-    top: 30%;
-    left: 20%;
+    top: 35%;
+    left: -333px;
     text-align: left;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
 }
 
 .mn-bnr .swiper-slide .mn-txts h4 {

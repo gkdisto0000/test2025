@@ -194,12 +194,12 @@ h2 {
     width: fit-content;
     z-index: 5;
     top: 35%;
-    left: -333px;
+    left: -15px;
     text-align: left;
     right: 0;
     bottom: 0;
     margin: auto;
-
+    width: 100%;
 }
 
 .mn-bnr .swiper-slide .mn-txts h4 {

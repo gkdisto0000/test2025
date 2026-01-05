@@ -569,6 +569,7 @@ h2 {
 .section-04 .graph-wrap ul {
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .section-04 .graph-wrap ul li {

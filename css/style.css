@@ -328,7 +328,7 @@ h2 {
 }
 
 .certi-wrap ul li img {
-    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.25);
     display: block;
     height: auto;
     width: 180px;
@@ -817,6 +817,7 @@ h2 {
 
 .floating-wrap ul li:nth-child(1) {
     background-color: #009CDE;
+    border-radius: 15px 0 0 0;
 }
 
 .floating-wrap ul li:nth-child(1):after {
@@ -854,6 +855,7 @@ h2 {
 
 .floating-wrap ul li:nth-child(4) {
     background-color: #202020;
+    border-radius: 0 0 0 15px;
 }
 
 .floating-wrap ul li:nth-child(4):after {

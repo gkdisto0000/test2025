@@ -18,7 +18,7 @@
 }
 
 html, body {
-    color: #1C1B1B;
+    color: #4a4a4a;
     width: 100%;
     overflow-x: hidden;
 }
@@ -344,14 +344,38 @@ h2 {
 }
 
 .certi-wrap .scroller-wrap {
-    margin-top: 30px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.certi-wrap .scroller-wrap:before, .certi-wrap .scroller-wrap:after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.certi-wrap .scroller-wrap:before {
+    background: linear-gradient(to right, #fff, rgba(255,255,255,0));
+}
+
+.certi-wrap .scroller-wrap:after {
+    background: linear-gradient(to right, rgba(255,255,255,0), #fff);
+    right: 0;
 }
 
 
 
-
 /* 건물종합관리 1 */
-.section-02 {
+.section-02 h2 {
+    text-align: center;
+    padding: 140px 0 40px;
+}
+
+.section-02 .flex {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -486,6 +510,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
+}
+
+.bnr-wrap .banner .btn-wrap:hover {
+    width: 340px;
+    height: 80px;
 }
 
 .bnr-wrap .banner .btn-wrap span {
@@ -500,7 +530,7 @@ h2 {
 .section-03 h2 {
     font-size: 52px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 60px;
 }
 
 .section-03 .arti-wrap {
@@ -612,7 +642,7 @@ h2 {
 
 .section-04 .graph-wrap ul li h3 {
     color: #fff;
-    font-weight: 900;
+    font-weight: 500;
     position: absolute;
     bottom: 10px;
     text-align: center;
@@ -736,11 +766,39 @@ h2 {
     margin-top: 11px;
 }
 
-.ftr-wrap footer .ftr-left .btm-txts {
-    color: #B5B5B5;
-    margin-top: 24px;
-    margin-left: 18px;
-    font-weight: bold;    
+.ftr-wrap footer .ftr-left .ftr-btn-wrap a {
+    background-color: #009CDE;
+    display: block;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 30px 10px 20px;
+    width: fit-content;
+    margin-top: 15px;
+    margin-left: 13px;
+    transition: background-color 0.3s;
+}
+
+.ftr-wrap footer .ftr-left .ftr-btn-wrap a:hover {
+    background-color: #2B2B2B;
+}
+
+.ftr-wrap footer .ftr-left .ftr-btn-wrap a .ftr-btn {
+    position: relative;
+}
+
+.ftr-wrap footer .ftr-left .ftr-btn-wrap a .ftr-btn:after{
+    display: block;
+    content: '';
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../image/chevron-right-solid-full.png');
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: -20px;
+    top: 3px;
 }
 
 .ftr-wrap .copyright {
@@ -1108,7 +1166,7 @@ h2 {
 
 
     /* section 02 */
-    .section-02 {
+    .section-02 > .flex {
         display: block;
         padding-top: 60px;
     }

@@ -21,6 +21,7 @@ $(function () {
 
   $('.scroller').simplyScroll({
       speed: 2,
+      pauseOnHover : false
   });
 
 

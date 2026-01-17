@@ -21,6 +21,7 @@ html, body {
     color: #4a4a4a;
     width: 100%;
     overflow-x: hidden;
+    word-break: keep-all;
 }
 
 body {
@@ -243,6 +244,10 @@ h2 {
 
 
 /* section 01 */
+.section-01 img {
+    border-radius: 30px;
+}
+
 .section-01 .image-left {
     position: relative;
 }
@@ -397,14 +402,60 @@ h2 {
     display: flex;
     align-items: center;
     white-space: nowrap;
-    justify-content: center;
+    justify-content: left;
+}
+
+.section-02 dl {
+    position: relative;
+    padding-left: 77px;
+}
+
+.section-02 dl:before {
+    display: block;
+    content: '';
+    width: 110px;
+    height: 110px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -40px;
+    top: -4px;
+}
+
+.section-02 .left-txts {
+    margin-left: 20px;
+}
+
+.section-02 .left-txts li:nth-child(1) dl::before {
+    background-image: url('../image/merit_icon01.png');
+}
+
+.section-02 .left-txts li:nth-child(2) dl::before {
+    background-image: url('../image/merit_icon02.png');
+}
+
+.section-02 .left-txts li:nth-child(3) dl::before {
+    background-image: url('../image/merit_icon03.png');
+}
+
+.section-02 .right-txts li:nth-child(1) dl::before {
+    background-image: url('../image/merit_icon04.png');
+}
+
+.section-02 .right-txts li:nth-child(2) dl::before {
+    background-image: url('../image/merit_icon05.png');
+}
+
+.section-02 .right-txts li:nth-child(3) dl::before {
+    background-image: url('../image/merit_icon06.png');
 }
 
 .section-02 dd {
     margin-top: 6px;
     font-size: 17px;
     white-space: nowrap;
-    text-align: center;
+    text-align: left;
 }
 
 .section-02 li:nth-child(n+2) {
@@ -427,7 +478,7 @@ h2 {
 }
 
 .section-02 .left-txts dt {
-    justify-content: center;
+    justify-content: left;
 }
 
 .section-02 .left-txts dt span {
@@ -435,7 +486,7 @@ h2 {
 }
 
 .section-02 .left-txts dd {
-    text-align: center;
+    text-align: left;
 }
 
 .section-02 .right-txts dt span {
@@ -447,7 +498,7 @@ h2 {
     width: 60%;
     height: auto;
     z-index: -2;
-    left: 240px;
+    left: 200px;
     top: -35px;
 }
 
@@ -563,6 +614,8 @@ h2 {
     padding: 146px 10px 30px 33px;
     color: #fff;
     position: relative;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .section-03 .arti-wrap article img {
@@ -571,6 +624,9 @@ h2 {
     left: 0;
     z-index: -1;
     transition: opacity 0.3s;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .section-03 .arti-wrap article:hover img{
@@ -959,8 +1015,32 @@ h2 {
     background-image: url('../image/floating-04_bk.png');
 }
 
+/* 중간 해상도 (Desktop ↓ ~ Tablet ↑) */
+@media (max-width: 1547px) and (min-width: 1024px) {
+    .section-01 .image-left .img-wrap:nth-child(1) {
+        
+    }
 
 
+    .section-02 .img-wrap {
+        width: 100%;
+        left: -30px;
+        opacity: 0.2 !important;
+    }
+
+    .section-03 .arti-wrap article {
+        width: 48%;
+    }
+
+    .section-04 .graph-wrap {
+        margin-top: -140px;
+    }
+
+    .ftr-wrap footer .footer-content .ftr-right dl:nth-child(n + 2) {
+        margin-left: 2%;
+    }
+
+}
 
 /* 태블릿 */
 @media (max-width: 1023px) {
@@ -1185,10 +1265,22 @@ h2 {
         width: 100%;
     }
 
+    .section-01 .image-left .img-wrap:nth-child(1) img {
+        max-height: 450px;
+        object-fit: cover;
+        object-position: center;
+    }
+
     .section-01 .image-left .img-wrap:nth-child(2) {
         width: 55%;
         right: 0;
         top: 215px;
+    }
+
+    .section-01 .image-left .img-wrap:nth-child(2) img {
+        max-height: 350px;
+        object-fit: cover;
+        object-position: bottom;
     }
 
     .section-01 .image-left .img-wrap:nth-child(2)::before {
@@ -1200,7 +1292,7 @@ h2 {
 
     .section-01 .txt-right {
         margin-left: 0;
-        margin-top: 115px;
+        margin-top: 130px;
     }
 
     .section-01 .txt-right p::before {
@@ -1279,8 +1371,10 @@ h2 {
         text-align: center;
     }
 
-    .section-02 .left-txts dl {
+    .section-02 .left-txts dl, .section-02 .right-txts dl {
         text-align: center;
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .section-02 .right-txts {
@@ -1510,6 +1604,10 @@ h2 {
     .ftr-wrap footer .footer-content .ftr-right dl:nth-child(n + 2) {
         margin-left: 0;
         margin-top: 30px;
+    }
+
+    .ftr-wrap footer .ftr-left .ftr-btn-wrap a {
+        margin: 20px auto 30px;
     }
 
 }

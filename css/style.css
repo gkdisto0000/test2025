@@ -338,7 +338,7 @@ h2 {
 }
 
 .certi-wrap ul li img {
-    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
     display: block;
     height: auto;
     width: 180px;
@@ -659,7 +659,7 @@ h2 {
 
 .section-04 .graph-wrap ul li .years p {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     color: #666;
     margin-top: 2px;
     letter-spacing: -1px;
@@ -947,7 +947,7 @@ h2 {
 }
 
 .floating-wrap ul li:nth-child(4) {
-    background-color: #F2D410;
+    background-color: #F8B74A;
     border-radius: 0 0 0 15px;
     color: #2b2b2b;
 }
@@ -1015,7 +1015,37 @@ h2 {
 
     .floating-wrap ul li {
         width: 25%;
+        border-radius: 0 !important;
+        height: 97px;
     }
+
+    .floating-wrap ul li a span {
+        font-size: 15px;
+    }
+
+    .floating-wrap ul li:nth-child(1):after {
+        width: 38px;
+        height: 38px;
+        bottom: 23px;
+    }
+
+    .floating-wrap ul li:nth-child(2):after {
+        width: 62px;
+        height: 62px;
+        bottom: 28px;
+    }
+
+    .floating-wrap ul li:nth-child(3):after {
+        width: 40px;
+        height: 40px;
+        bottom: 26px;
+    }
+
+    .floating-wrap ul li:nth-child(4):after {
+        width: 46px;
+        height: 46px;
+        bottom: 25px;
+    }    
 
 
     /* navigation */
@@ -1158,6 +1188,7 @@ h2 {
     .section-01 .image-left .img-wrap:nth-child(2) {
         width: 55%;
         right: 0;
+        top: 215px;
     }
 
     .section-01 .image-left .img-wrap:nth-child(2)::before {
@@ -1169,7 +1200,7 @@ h2 {
 
     .section-01 .txt-right {
         margin-left: 0;
-        margin-top: 220px;
+        margin-top: 115px;
     }
 
     .section-01 .txt-right p::before {
@@ -1202,7 +1233,13 @@ h2 {
         height: 180px !important;
     }
 
-
+    .certi-wrap .scroller-wrap {
+        margin-top: 30px;
+    }
+    
+    .simply-scroll, .simply-scroll .simply-scroll-clip {
+        height: 180px !important;
+    }
 
 
     /* section 02 */

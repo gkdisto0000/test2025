@@ -1372,11 +1372,17 @@ h2 {
     /* section 02 */
     .section-02 > .flex {
         display: block;
-        padding-top: 60px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .section-02 .left-txts li, .section-02 .right-txts li {
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .section-02 .left-txts li:nth-child(n+2) {
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .section-02 li:nth-child(n+2) {
@@ -1385,12 +1391,13 @@ h2 {
 
     .section-02 dt, .section-02 dd {
         display: block;
-        text-align: center;
+        text-align: left;
     }
 
     .section-02 .left-txts dt {
         justify-content: center;
         position: relative;
+        font-size: 26px;
     }
 
     .section-02 .left-txts dt span {
@@ -1403,12 +1410,19 @@ h2 {
     }
 
     .section-02 .left-txts dd {
-        text-align: center;
+        text-align: left;
+    }
+
+    .section-02 dl:before {
+        width: 100px;
+        height: 100px;
+        left: -35px;
+
     }
 
     .section-02 .left-txts dl, .section-02 .right-txts dl {
-        text-align: center;
-        width: fit-content;
+        text-align: left;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -1423,7 +1437,7 @@ h2 {
     .section-02 .img-wrap {
         position: initial;
         width: 100%;
-        padding: 10px 0 20px;
+        padding: 0;
     }
 
 
@@ -1491,7 +1505,7 @@ h2 {
     }
 
     .section-04 .graph-wrap {
-        margin-top: 60px;
+        margin-top: 30px;
         padding: 0 20px;
     }
 

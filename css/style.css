@@ -1379,6 +1379,7 @@ h2 {
         display: block;
         width: fit-content;
         margin: 0 auto;
+        padding: 0 20px;
     }
 
     .section-02 .left-txts li, .section-02 .right-txts li {
@@ -1399,10 +1400,10 @@ h2 {
         text-align: left;
     }
 
-    .section-02 .left-txts dt {
+    .section-02 .left-txts dt, .section-02 .right-txts dt {
         justify-content: center;
         position: relative;
-        font-size: 26px;
+        font-size: 23px;
     }
 
     .section-02 .left-txts dt span {
@@ -1416,12 +1417,13 @@ h2 {
 
     .section-02 .left-txts dd {
         text-align: left;
+        min-height: auto;
     }
 
     .section-02 dl:before {
-        width: 100px;
-        height: 100px;
-        left: -35px;
+        width: 90px;
+        height: 90px;
+        left: -25px;
 
     }
 
@@ -1433,6 +1435,7 @@ h2 {
 
     .section-02 .right-txts {
         margin-top: 30px;
+        padding: 0 20px;
     }
 
     .section-02 .right-txts dt span {

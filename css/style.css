@@ -465,10 +465,15 @@ h2 {
     font-size: 17px;
     white-space: nowrap;
     text-align: left;
+    min-height: 50px;
 }
 
 .section-02 li:nth-child(n+2) {
     margin-top: 74px;
+}
+
+.section-02 .left-txts li:nth-child(3), .section-02 .right-txts li:nth-child(2) {
+    margin-top: 35px;
 }
 
 .section-02 dt span {

@@ -491,22 +491,23 @@
 
 
     <script>
-    var myLocation = new naver.maps.LatLng(126.775183, 37.477845);
-    
-    // 2. 지도 옵션 설정
-    var mapOptions = {
-        center: myLocation, // 주소 위치를 중심으로 설정
-        zoom: 18
-    };
-    
-    // 3. 지도 생성
-    var map = new naver.maps.Map('map', mapOptions);
-    
-    // 4. 마커 표시
-    var marker = new naver.maps.Marker({
-        position: myLocation,
-        map: map
-    });
+        var myLocation = new naver.maps.LatLng(37.481525, 126.784261);
+        
+        // 4. 지도 옵션 설정
+        var mapOptions = {
+            center: myLocation,
+            zoom: 17
+        };
+        
+        // 5. 지도 생성
+        var map = new naver.maps.Map('map', mapOptions);
+        
+        // 6. 마커 표시
+        var marker = new naver.maps.Marker({
+            position: myLocation,
+            map: map,
+            title: "심곡로67번길 5"
+        });
     </script>
 
 </body>

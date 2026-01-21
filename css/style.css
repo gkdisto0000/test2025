@@ -123,11 +123,21 @@ h2 {
     align-items: center;
 }
 
+.navi-sec .flex nav::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
 .navi-sec .flex nav a {
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
     transition: color 0.3s;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
 }
 
 .navi-sec .flex nav a:hover {
@@ -285,7 +295,7 @@ h2 {
     position: absolute;
     z-index: 1;
     right: -84px;
-    top: 276px;
+    top: 179px;
 }
 
 .section-01 .image-left .img-wrap:nth-child(2)::before {
@@ -311,7 +321,7 @@ h2 {
 
 .section-01 .txt-right {
     margin-left: 130px;
-    margin-top: 114px;
+    margin-top: 125px;
 }
 
 .section-01 .txt-right p {
@@ -340,7 +350,7 @@ h2 {
 }
 
 .certi-wrap {
-    padding: 385px 0 130px;
+    padding: 250px 0 130px;
 }
 
 .certi-wrap h2 {
@@ -401,7 +411,7 @@ h2 {
 
 .section-02 .flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
 }
 
@@ -416,24 +426,28 @@ h2 {
 
 .section-02 dl {
     position: relative;
-    padding-left: 77px;
+    padding-left: 160px;
 }
 
 .section-02 dl:before {
     display: block;
     content: '';
-    width: 110px;
-    height: 110px;
+    width: 130px;
+    height: 130px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    left: -40px;
-    top: -4px;
+    left: 10px;
+    top: -17px;
 }
 
-.section-02 .left-txts {
-    margin-left: 20px;
+.section-02 .left-txts{
+    width: 45%;
+}
+
+.section-02 .right-txts {
+    width: 42%;
 }
 
 .section-02 .left-txts li:nth-child(1) dl::before {
@@ -460,6 +474,10 @@ h2 {
     background-image: url('../image/merit_icon06.png');
 }
 
+.section-02 .left-txts li:nth-child(3) {
+    margin-top: 19px;
+}
+
 .section-02 dd {
     margin-top: 6px;
     font-size: 17px;
@@ -469,11 +487,7 @@ h2 {
 }
 
 .section-02 li:nth-child(n+2) {
-    margin-top: 74px;
-}
-
-.section-02 .left-txts li:nth-child(3), .section-02 .right-txts li:nth-child(2) {
-    margin-top: 35px;
+    margin-top: 50px;
 }
 
 .section-02 dt span {
@@ -505,15 +519,6 @@ h2 {
 
 .section-02 .right-txts dt span {
     margin-right: 6px;
-}
-
-.section-02 .img-wrap {
-    position: absolute;
-    width: 60%;
-    height: auto;
-    z-index: -2;
-    left: 200px;
-    top: -35px;
 }
 
 
@@ -565,10 +570,14 @@ h2 {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
 
 .bnr-wrap .banner h2 {
     font-size: 40px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .bnr-wrap .banner p {
@@ -588,6 +597,26 @@ h2 {
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
+    position: absolute;
+    bottom: 50px;
+    right: 68px;
+}
+
+.bnr-wrap .banner .btn-wrap::before {
+    display: block;
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-image: url('../image/sec02-img2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -372px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .bnr-wrap .banner .btn-wrap:hover {
@@ -1030,35 +1059,14 @@ h2 {
 }
 
 /* 중간 해상도 (Desktop ↓ ~ Tablet ↑) */
-@media (max-width: 1547px) {
-
+@media (max-width: 1400px) {
     /* common */
     .common-wrap {
         width: 90%;
     }
 
-
-    .only-pc-show {
-        display: none;
-    }
-
-    .ta-show {
-        display: block !important;
-    }
-
     .mn-bnr .swiper-slide .mn-txts {
         left: 5%;
-    }
-
-    .section-02 .img-wrap {
-        width: 60%;
-        left: -8%;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        opacity: 0.2 !important;
-        max-width: 500px;
     }
 
     .section-03 .arti-wrap article {
@@ -1072,7 +1080,24 @@ h2 {
     .ftr-wrap footer .footer-content .ftr-right dl:nth-child(n + 2) {
         margin-left: 2%;
     }
+    
+    .ftr-wrap footer .footer-content .ftr-right {
+        width: 80%;
+    }
 
+}
+
+
+
+@media (max-width: 1300px) {
+
+    .only-pc-show {
+        display: none;
+    }
+
+    .ta-show {
+        display: block !important;
+    }
 
 
     /* navigation */
@@ -1137,12 +1162,13 @@ h2 {
         height: auto;
         top: 80px;
         left: 0;
+        flex-wrap: wrap;
         display: none;
     }
 
     .navi-sec .flex nav a {
         width: 100%;
-        display: block;
+        display: flex;
         text-align: center;
         font-size: 15px;
         height: 40px;
@@ -1157,8 +1183,6 @@ h2 {
         margin-left: 0;
         border-bottom: 1px solid #ddd;
     }
-
-
 
 
 }
@@ -1315,6 +1339,7 @@ h2 {
         width: 55%;
         right: 0;
         top: 215px;
+        display: none;
     }
 
     .section-01 .image-left .img-wrap:nth-child(2) img {
@@ -1332,7 +1357,7 @@ h2 {
 
     .section-01 .txt-right {
         margin-left: 0;
-        margin-top: 130px;
+        margin-top: -110px;
     }
 
     .section-01 .txt-right p::before {
@@ -1340,12 +1365,18 @@ h2 {
         bottom: 0;
         margin: auto;
         top: -175px;
+        display: none;
     }
 
     .section-01 .txt-right p {
         text-align: center;
-        margin-top: 50px;
+        margin-top: 35px;
         font-size: 15px;
+    }
+
+    .section-01 h2 {
+        color: #fff;
+        text-shadow: 0 2px 15px rgba(0, 0, 0, 0.9);
     }
 
 
@@ -1382,22 +1413,18 @@ h2 {
         padding: 0 20px;
     }
 
-    .section-02 .left-txts li, .section-02 .right-txts li {
-        width: fit-content;
-        margin: 0 auto;
-    }
-
     .section-02 .left-txts li:nth-child(n+2) {
         margin-top: 40px;
     }
 
     .section-02 li:nth-child(n+2) {
-        margin-top: 30px;
+        margin-top: 30px !important;
     }
 
     .section-02 dt, .section-02 dd {
         display: block;
         text-align: left;
+        min-height: auto;
     }
 
     .section-02 .left-txts dt, .section-02 .right-txts dt {
@@ -1421,32 +1448,34 @@ h2 {
     }
 
     .section-02 dl:before {
-        width: 90px;
-        height: 90px;
-        left: -25px;
-
+        width: 100px;
+        height: 100px;
+        left: 0px;
+        right: revert-layer;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
 
     .section-02 .left-txts dl, .section-02 .right-txts dl {
         text-align: left;
         width: 100%;
         margin: 0 auto;
+        padding-left: 110px;
     }
 
     .section-02 .right-txts {
         margin-top: 30px;
-        padding: 0 20px;
     }
 
     .section-02 .right-txts dt span {
         margin: 0 auto;
     }
 
-    .section-02 .img-wrap {
-        position: initial;
+    .section-02 .left-txts, .section-02 .right-txts {
         width: 100%;
-        padding: 0;
     }
+
 
 
     /* 건물관리 2 */
@@ -1577,8 +1606,18 @@ h2 {
     .bnr-wrap .banner .btn-wrap {
         width: fit-content;
         height: inherit;
-        margin: 20px auto 0;
+        margin: 150px auto 0;
         padding: 12px 30px;
+        position: initial;
+    }
+
+    .bnr-wrap .banner .btn-wrap::before {
+        width: 160px;
+        height: 160px;
+        top: initial;
+        bottom: 84px;
+        background-image : url('../image/sec02-img2_mo.png');
+        z-index: 0;
     }
 
     .bnr-wrap .banner .btn-wrap span {
@@ -1636,6 +1675,10 @@ h2 {
         width: fit-content;
     }
 
+    .ftr-wrap footer .footer-content .ftr-right {
+        width: 100%;
+    }
+    
     .ftr-wrap footer .footer-content .ftr-right dl {
         text-align: center;
     }

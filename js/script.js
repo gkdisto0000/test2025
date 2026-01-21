@@ -61,22 +61,24 @@ $('nav a').on('click', function (e) {
 });
 
 
-  // 헤더 클릭 시 특정위치로 앵커
-  $('nav a').on('click', function (e) {
-    e.preventDefault();
+// 헤더 클릭 시 특정위치로 앵커
+$('nav a').on('click', function (e) {
+  e.preventDefault();
 
-    const targetClass = $(this).data('target');
-    const $target = $('.' + targetClass);
-    const headerH = $('.navi-sec').outerHeight();
+  const targetClass = $(this).data('target');
+  const $target = $('.' + targetClass);
+  const headerH = $('.navi-sec').outerHeight();
+  const offsetGap = 50; // 추가 여백
 
-    if (!$target.length) return;
+  if (!$target.length) return;
 
-    const targetTop = $target.offset().top - headerH;
+  const targetTop = $target.offset().top - headerH - offsetGap;
 
-    $('html, body').stop().animate({
-      scrollTop: targetTop
-    }, 400);
-  });
+  $('html, body').stop().animate({
+    scrollTop: targetTop
+  }, 400);
+});
+
 
   // floating banner
   $(window).on('scroll resize', function () {

@@ -396,7 +396,7 @@ h2 {
 /* 건물종합관리 1 */
 .section-02 h2 {
     text-align: center;
-    padding: 140px 0 40px;
+    margin: 140px 0 40px;
 }
 
 .section-02 .flex {

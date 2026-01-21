@@ -490,25 +490,27 @@
     </div>
 
 
-    <script>
-        var myLocation = new naver.maps.LatLng(37.481525, 126.784261);
-        
-        // 4. 지도 옵션 설정
-        var mapOptions = {
-            center: myLocation,
-            zoom: 17
-        };
-        
-        // 5. 지도 생성
-        var map = new naver.maps.Map('map', mapOptions);
-        
-        // 6. 마커 표시
-        var marker = new naver.maps.Marker({
-            position: myLocation,
-            map: map,
-            title: "심곡로67번길 5"
-        });
-    </script>
+<script>
+    // 2. 좌표 설정: 위도(37.x), 경도(126.x) 순서로 넣었습니다.
+    var lat = 37.477845;
+    var lng = 126.775183;
+    var myLocation = new naver.maps.LatLng(lat, lng);
+    
+    // 3. 지도 옵션 및 생성
+    var mapOptions = {
+        center: myLocation,
+        zoom: 17 // 숫자가 클수록 확대됩니다.
+    };
+    
+    var map = new naver.maps.Map('map', mapOptions);
+    
+    // 4. 마커 표시
+    var marker = new naver.maps.Marker({
+        position: myLocation,
+        map: map,
+        title: "메리트아이티 부천점"
+    });
+</script>
 
 </body>
 </html>

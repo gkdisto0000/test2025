@@ -27,7 +27,7 @@ $(function () {
 
 // 모바일 햄버거 네비게이션 바 (iOS 안정형)
 const $ham = $('.hamberger');
-const $nav = $('.navi-sec .flex nav');
+const $nav = $('.navi-sec .ta-show .flex nav');
 
 $ham.on('click', function (e) {
   e.preventDefault();

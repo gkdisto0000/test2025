@@ -737,6 +737,35 @@ h2 {
     position: relative;
 }
 
+.section-04 .graph-wrap ul li:after {
+    display: block;
+    content: '';
+    width: 2px;
+    height: 205px;
+    position: absolute;
+    top: -7px;
+    bottom: initial;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.section-04 .graph-wrap ul li:nth-child(1):after {
+    background-color: #F6BE4F;
+}
+
+.section-04 .graph-wrap ul li:nth-child(2):after {
+    background-color: #9ECF9E;
+}
+
+.section-04 .graph-wrap ul li:nth-child(3):after {
+    background-color: #6DB9C9;
+}
+
+.section-04 .graph-wrap ul li:nth-child(4):after {
+    background-color: #009CDE;
+}
+
 
 .section-04 .graph-wrap ul li:nth-child(n + 2 ) {
     margin-left: 8px;
@@ -745,6 +774,7 @@ h2 {
 .section-04 .graph-wrap ul li img {
     width: 145px;
     margin: 0 0 0 auto;
+    padding-top: 120px;
 }
 
 .section-04 .graph-wrap ul li .years {
@@ -1589,6 +1619,22 @@ h2 {
         width: 80%;
         opacity: 0.3;
     }
+
+
+    .section-04 .graph-wrap ul li:after {
+        height: 100px;
+        top: 70px;
+    }
+
+    .section-04 .graph-wrap ul li:nth-child(1) .years {
+        margin-top: 18px;
+    }
+
+    .section-04 .graph-wrap ul li:nth-child(4) .years {
+        margin-top: -25px;
+    }
+
+
 
     /* 연락 배너 */
     .bnr-wrap {

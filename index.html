@@ -545,6 +545,11 @@
         map: map,
         title: "메리트아이티 부천점"
     });
+
+    naver.maps.Event.addListener(marker, 'click', function(e) {
+        window.open('https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EB%B6%80%EC%B2%9C%EC%8B%9C%20%EC%86%8C%EC%82%AC%EA%B5%AC%20%EC%8B%AC%EA%B3%A1%EB%A1%9C%2067%EB%B2%88%EA%B8%B8%205(%EC%8B%AC%EA%B3%A1%EB%B3%B8%EB%8F%99)?c=15.00,0,0,0,dh'); 
+    });
+
 </script>
 
 </body>

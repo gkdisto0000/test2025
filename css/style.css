@@ -82,7 +82,7 @@ h2 {
 
 /* navigation bar */
 .navi-Wrap {
-    height: 80px;
+    height: 120px;
     position: fixed;
     z-index: 999;
     background-color: #fff;
@@ -97,7 +97,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 120px;
 }
 
 .navi-sec > a {
@@ -119,7 +119,7 @@ h2 {
 .navi-sec .flex nav {
     display: flex;
     margin-right: 30px;
-    height: 80px;
+    height: 120px;
     align-items: center;
 }
 
@@ -181,7 +181,7 @@ h2 {
 
 /* main banner */
 .mn-bnr {
-    margin-top: 80px;
+    margin-top: 120px;
     width: 100%;
     background-color: #202020;
 }
@@ -369,12 +369,12 @@ h2 {
 }
 
 .simply-scroll, .simply-scroll .simply-scroll-clip {
-    height: 280px !important;
+    height: 277px !important;
 }
 
 .simply-scroll .simply-scroll-list li {
     width: 200px !important;
-    height: 280px !important;
+    height: 277px !important;
 }
 
 .certi-wrap .scroller-wrap {
@@ -774,7 +774,7 @@ h2 {
 .section-04 .graph-wrap ul li img {
     width: 145px;
     margin: 0 0 0 auto;
-    padding-top: 120px;
+    padding-top: 160px;
 }
 
 .section-04 .graph-wrap ul li .years {
@@ -816,10 +816,10 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('../image/building-arrow.png');
-    width: 453px;
+    width: 410px;
     height: 267px;
     position: absolute;
-    top: -47px;
+    top: -45px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1028,7 +1028,7 @@ h2 {
     margin-bottom: 13px;
 }
 
-.floating-wrap ul li::after {
+.floating-wrap ul li a::after {
     display: block;
     content: '';
     position: absolute;
@@ -1047,7 +1047,7 @@ h2 {
     border-radius: 15px 0 0 0;
 }
 
-.floating-wrap ul li:nth-child(1):after {
+.floating-wrap ul li:nth-child(1) a:after {
     width: 28px;
     height: 28px;
     bottom: 15px;
@@ -1062,7 +1062,7 @@ h2 {
     color: #3C1F21;
 }
 
-.floating-wrap ul li:nth-child(2):after {
+.floating-wrap ul li:nth-child(2) a:after {
     width: 52px;
     height: 52px;
     bottom: 18px;
@@ -1073,7 +1073,7 @@ h2 {
     background-color: #30A846;
 }
 
-.floating-wrap ul li:nth-child(3):after {
+.floating-wrap ul li:nth-child(3) a:after {
     width: 35px;
     height: 32px;
     bottom: 18px;
@@ -1086,7 +1086,7 @@ h2 {
     color: #2b2b2b;
 }
 
-.floating-wrap ul li:nth-child(4):after {
+.floating-wrap ul li:nth-child(4) a:after {
     width: 37px;
     height: 37px;
     bottom: 20px;
@@ -1138,12 +1138,12 @@ h2 {
     /* navigation */
     .navi-Wrap {
         padding-top: env(safe-area-inset-top);
-        height: calc(80px + env(safe-area-inset-top));
+        height: 94px;
     }
 
     .navi-sec {
         position: relative; /* fixed 제거 */
-        height: 80px;
+        height: 94px;
         padding-top: 0;
         top: auto;
     }
@@ -1154,6 +1154,7 @@ h2 {
 
     .navi-sec h1 {
         width: 100%;
+        margin-top: 0;
     }
 
     .hamberger {
@@ -1195,7 +1196,7 @@ h2 {
         position: absolute;
         width: 100%;
         height: auto;
-        top: 80px;
+        top: 93px;
         left: 0;
         flex-wrap: wrap;
         display: none;
@@ -1219,6 +1220,9 @@ h2 {
         border-bottom: 1px solid #ddd;
     }
 
+    .mn-bnr {
+        margin-top: 94px;
+    }
 
 }
 
@@ -1268,7 +1272,8 @@ h2 {
     }
 
     .navi-sec > a {
-        width: 60%;
+        width: 70%;
+        max-width: 380px;
     }
 
     /* floating */
@@ -1292,25 +1297,25 @@ h2 {
         font-size: 15px;
     }
 
-    .floating-wrap ul li:nth-child(1):after {
+    .floating-wrap ul li:nth-child(1) a:after {
         width: 38px;
         height: 38px;
         bottom: 23px;
     }
 
-    .floating-wrap ul li:nth-child(2):after {
+    .floating-wrap ul li:nth-child(2) a:after {
         width: 62px;
         height: 62px;
         bottom: 28px;
     }
 
-    .floating-wrap ul li:nth-child(3):after {
+    .floating-wrap ul li:nth-child(3) a:after {
         width: 40px;
         height: 40px;
         bottom: 26px;
     }
 
-    .floating-wrap ul li:nth-child(4):after {
+    .floating-wrap ul li:nth-child(4) a:after {
         width: 46px;
         height: 46px;
         bottom: 25px;
@@ -1365,7 +1370,7 @@ h2 {
     }
 
     .section-01 .image-left .img-wrap:nth-child(1) img {
-        max-height: 350px;
+        max-height: 290px;
         object-fit: cover;
         object-position: center;
     }
@@ -1392,7 +1397,7 @@ h2 {
 
     .section-01 .txt-right {
         margin-left: 0;
-        margin-top: -110px;
+        margin-top: -130px;
     }
 
     .section-01 .txt-right p::before {
@@ -1405,7 +1410,7 @@ h2 {
 
     .section-01 .txt-right p {
         text-align: center;
-        margin-top: 35px;
+        margin-top: 55px;
         font-size: 15px;
     }
 
@@ -1458,14 +1463,18 @@ h2 {
 
     .section-02 dt, .section-02 dd {
         display: block;
-        text-align: left;
+        text-align: center;
         min-height: auto;
+    }
+
+    .section-02 .left-txts dt {
+        margin-top: -5px;
     }
 
     .section-02 .left-txts dt, .section-02 .right-txts dt {
         justify-content: center;
         position: relative;
-        font-size: 23px;
+        font-size: 26px;
     }
 
     .section-02 .left-txts dt span {
@@ -1478,25 +1487,23 @@ h2 {
     }
 
     .section-02 .left-txts dd {
-        text-align: left;
+        text-align: center;
         min-height: auto;
     }
 
     .section-02 dl:before {
-        width: 100px;
-        height: 100px;
-        left: 0px;
-        right: revert-layer;
-        top: 0;
-        bottom: 0;
-        margin: auto;
+        width: 180px;
+        height: 180px;
+        position: initial;
+        margin: 0 auto;
     }
 
     .section-02 .left-txts dl, .section-02 .right-txts dl {
-        text-align: left;
+        text-align: center;
         width: 100%;
         margin: 0 auto;
-        padding-left: 110px;
+        padding-left: initial;
+        max-width: 70%;
     }
 
     .section-02 .right-txts {
@@ -1627,7 +1634,7 @@ h2 {
     }
 
     .section-04 .graph-wrap ul li:nth-child(1) .years {
-        margin-top: 18px;
+        margin-top: 11px;
     }
 
     .section-04 .graph-wrap ul li:nth-child(4) .years {
@@ -1720,6 +1727,7 @@ h2 {
     .ftr-wrap footer .footer-content h1 {
         width: 250px;
         margin: 0 auto;
+        background-image: url('../image/ftr-logo-mb.png');
     }
 
     .ftr-wrap footer .ftr-left .btm-txts {
@@ -1760,6 +1768,15 @@ h2 {
 
     .ftr-wrap footer .ftr-left .ftr-btn-wrap a {
         margin: 20px auto 30px;
+    }
+
+    .ftr-wrap .copyright {
+        font-size: 14px;
+        padding: 15px 0 20px;
+    }
+
+    .ftr-wrap .gray-arrow {
+        bottom: 58px;
     }
 
 }

@@ -21,7 +21,8 @@ $(function () {
 
   $('.scroller').simplyScroll({
       speed: 2,
-      pauseOnHover : false
+      auto: true,
+      pauseOnHover: false // 마우스 hover 시 멈춤 비활성화
   });
 
 

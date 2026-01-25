@@ -1633,8 +1633,12 @@ h2 {
         top: 70px;
     }
 
+    .section-04 .graph-wrap ul li:nth-child(1):after {
+        top: 85px;
+    }
+
     .section-04 .graph-wrap ul li:nth-child(1) .years {
-        margin-top: 11px;
+        margin-top: 27px;
     }
 
     .section-04 .graph-wrap ul li:nth-child(4) .years {
